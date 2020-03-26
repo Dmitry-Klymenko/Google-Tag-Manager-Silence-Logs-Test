@@ -3,7 +3,6 @@
 //  test-gtm-swift
 //
 //  Created by Dmitry Klymenko on 26/3/20.
-//  Copyright © 2020 Capibara. All rights reserved.
 //
 
 import UIKit
