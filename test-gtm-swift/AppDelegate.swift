@@ -100,12 +100,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         
         //do best efforts to silence it
-        self.silenceGTMLogs()
+        //self.silenceGTMLogs()
+        //FirebaseConfiguration.shared.setLoggerLevel(.min)
         
         //send some test events
+        Analytics.setUserProperty("test", forName:"userProp")
         Analytics.logEvent("test_event", parameters: ["image_name": "test image", "full_txt":"text"])
         Analytics.logEvent("test_event2", parameters: ["image_name2": "test image", "full_txt2":"text"])
-        Analytics.setUserProperty("test", forName:"userProp")
 
         
         
